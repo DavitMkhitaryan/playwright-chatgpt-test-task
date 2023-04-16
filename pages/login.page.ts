@@ -14,9 +14,9 @@ export default class LoginPage {
     this.page = page;
 
     // Locators
-    this.usernameField = page.locator('#user-name');
-    this.passwordField = page.locator('#password');
-    this.loginButton = page.locator('#login-button');
+    this.usernameField = this.page.locator('#user-name');
+    this.passwordField = this.page.locator('#password');
+    this.loginButton = this.page.locator('#login-button');
   }
 
   async navigate(): Promise<void> {
